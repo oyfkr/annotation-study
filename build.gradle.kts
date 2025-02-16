@@ -28,6 +28,10 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+    // mock (multipart file create)
+    implementation("org.springframework:spring-mock:2.0.8")
+    testImplementation("io.mockk:mockk:1.13.9")
 }
 
 kotlin {
