@@ -6,6 +6,3 @@ data class CacheEntry<T>(
 ) {
     fun isExpired(): Boolean = System.currentTimeMillis() > expirationTime
 }
-
-
-// 어떻게 하면 좋을까??

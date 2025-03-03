@@ -16,4 +16,8 @@ object CacheManager {
     }
 
     // put 함수 만들기
+    fun put(key: String, value: Any, expirationInSeconds: Long) {
+        val expirationTime = System.currentTimeMillis() + (expirationInSeconds * 1000)
+        cache[key] = CacheEntry(value, expirationTime)
+    }
 }
